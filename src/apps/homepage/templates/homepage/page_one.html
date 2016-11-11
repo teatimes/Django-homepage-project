@@ -1,0 +1,128 @@
+{% extends 'shared/base.html' %}
+
+{% block header %}
+
+<header></header>
+
+{% endblock %}
+
+{% block main %}
+
+<h1 class="ui huge center aligned dividing header">
+	Page 1
+</h1>
+
+<nav class="anchorBar">
+	<ul>
+		<li>
+			<a href="#anchor1">Header1</a>
+		</li>
+		<li>
+			<a href="#anchor2">Header2</a>
+		</li>
+		<li>
+			<a href="#anchor3">Header3</a>
+		</li>
+	</ul>
+</nav>
+
+<h2 class="ui dividing header" id="anchor1">
+	Header1
+</h2>
+
+<div>
+	<p>
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat.
+		In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo.
+		Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante.	</p>
+
+	<em>
+		 Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui. Ut tincidunt tortor.
+		Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque.
+		Cras ipsum. Vestibulum pretium, lectus nec venenatis volutpat, purus lectus ultrices risus, a condimentum risus mi et quam.
+	</em>
+
+</div>
+
+<h2 class="ui dividing header" id="anchor2">
+	Header2
+</h2>
+
+<div id="videoDiv">
+	<div class="videoBox">
+		<iframe src="https://embed.ted.com/talks/halla_tomasdottir_it_s_time_for_women_to_run_for_office" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><div class="videoDescription">
+			<h3 class="ui header">
+				"It's time for women to run for office"
+			</h3>
+			<a href="https://www.ted.com/talks/halla_tomasdottir_it_s_time_for_women_to_run_for_office" class="videoTitle">
+				"It's time for women to run for office"
+			</a>
+			<p class="ui videoOf">
+				by Halla Tómasdóttir
+			</p>
+			<p>
+				With warmth and wit, Halla Tómasdóttir shares how she overcame media bias, changed the tone of the
+				political debate and surprised her entire nation when she ran for president of Iceland — inspiring the
+				next generation of leaders along the way. "What we see, we can be," she says. "It matters that women run."
+			</p>
+		</div>
+	</div>
+
+	<div class="videoBox">
+		<iframe src="https://embed.ted.com/talks/tim_leberecht_4_ways_to_build_a_human_company_in_the_age_of_machines" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		<div class="videoDescription">
+			<h3 class="ui header">
+				"4 ways to build a human company in the age of machines"
+			</h3>
+			<a href="https://www.ted.com/talks/tim_leberecht_4_ways_to_build_a_human_company_in_the_age_of_machines" class="videoTitle">
+				"4 ways to build a human company in the age of machines"
+			</a>
+			<p class="ui videoOf">
+				by Tim Leberecht
+			</p>
+			<p>
+				In the face of artificial intelligence and machine learning, we need a new radical humanism, says
+				Tim Leberecht. For the self-described "business romantic," this means designing organizations and
+				workplaces that celebrate authenticity instead of efficiency and questions instead of answers.
+				Leberecht proposes four (admittedly subjective) principles for building beautiful organizations.
+			</p>
+		</div>
+	</div>
+</div>
+
+<h2 class="ui dividing header" id="anchor3">
+	Header3
+</h2>
+
+<div id="articleDiv" class="itemsIndent">
+	<h3 class="ui header">
+		<a href="https://www.reddit.com/"target="_blank">
+			Reddit
+		</a>
+	</h3>
+	<p class="articleDescription">
+		Sed aliquet, turpis ac tincidunt pharetra, leo erat rhoncus risus, nec dignissim orci justo pretium ligula.
+		Fusce nec egestas mi, tristique fringilla orci. Aliquam efficitur tellus blandit, consectetur lectus vel, commodo erat.
+		Aenean egestas iaculis mi at porta. Nulla pulvinar faucibus nibh.
+	</p>
+
+	<h3 class="ui header">
+		<a href="https://www.nrk.no/" target="_blank">
+			NRK
+		</a>
+	</h3>
+	<p class="articleDescription">
+		Sed aliquet, turpis ac tincidunt pharetra, leo erat rhoncus risus, nec dignissim orci justo pretium ligula.
+		Fusce nec egestas mi, tristique fringilla orci. Aliquam efficitur tellus blandit, consectetur lectus vel, commodo erat.
+		Aenean egestas iaculis mi at porta. Nulla pulvinar faucibus nibh.
+	</p>
+
+</div>
+
+<br>
+
+<p class="contactMe"> 
+	Any questions? <a href="/contact">Contact me</a>
+</p>
+
+{% endblock %}

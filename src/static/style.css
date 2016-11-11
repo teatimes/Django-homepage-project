@@ -1,0 +1,430 @@
+:root {
+	--mainColor: #00cbe9;
+	--secondColor: #7B7E82;
+	--heading-font: "Montserrat", Arial, Helvetica, serif;
+	--text-font: "Merriweather", "Montserrat", Arial !important;
+	--main-width: 1000px;
+	}
+
+body {
+	background-image: url(seamless_paper_texture.png);
+	font-family:  var(--text-font);
+	color: rgba(0,0,0,.8);
+}
+
+header {
+	height: 400px;
+	width: 100%;
+	background-image: url(header.JPG);
+	background-size: cover;
+	background-position: center;
+	vertical-align: 40%;
+	display: block;
+}
+
+#nav, #navResponsive {
+	margin: 0 !important;
+}
+
+nav {
+	width: 100%;
+	display: block;
+	/*margin-top: 400px;*/
+	/*margin-bottom: 40px;*/
+}
+
+.mySticky {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+#navContainer {
+	width: var(--main-width);
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+main {
+	width: var(--main-width);
+	font-size: 115%;
+}
+
+#rail {
+	width: 300px; /* 300.5px i semantic ui */
+}
+
+#main {
+	margin: 60px auto 0 auto;
+	padding: 50px;
+	display: block;
+	min-height: 100%;
+	line-height: 1.9em !important;
+	border: none;
+	box-shadow: none;
+	width: var(--main-width);
+}
+
+#footer {
+	display: block;
+	padding: 20px;
+	color: rgba(255,255,255,.9);
+	margin-bottom: 0px;
+}
+
+#footer p {
+	color: white;
+	font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+	text-transform: uppercase;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	margin-bottom: 0px !important;
+}
+
+.videoDescription > h3 {
+	margin-bottom: 10px !important;
+}
+
+a:hover {
+	color: var(--secondColor);
+}
+
+h1, h2, h3, h4 {
+	/* Lato fra Semantic som er standardheader pdd */
+	font-family: var(--heading-font);
+	font-size: 1.5em;
+}
+
+h4 > a, h3 > a {
+	font-weight: bold !important;
+}
+
+/*
+:target {
+	padding-top: 60px !important;
+}
+*/
+.mainColor {
+	background-color: var(--mainColor) !important;
+}
+
+p {
+	font-family: var(--text-font);
+	text-align: left;
+	font-weight: normal;
+	line-height: 1.9em;
+	color: rgba(0,0,0,.8);
+}
+
+a {
+	text-decoration: underline;
+	color: black;
+	font-weight: normal;
+}
+
+.header > a {
+	text-decoration: none;
+}
+
+.itemsIndent a, .itemsIndent p, .itemsIndent + p {
+	text-indent: 0em;
+}
+
+/* rail.html */
+
+#news {
+	margin-top: 20px;
+}
+
+/* navResponsive.html */
+
+#navResponsive {
+	height: 44px;
+	width: 100%;
+}
+
+#navResponsive .ui.simple.dropdown.item {
+	margin: auto auto;
+	height: 44px;
+	width: 100%;
+	padding: 10px 0;
+}
+
+#navResponsive .ui.simple.dropdown.item p {
+	margin: auto auto;
+}
+
+#navResponsive .menu {
+	margin: -3px auto;
+}
+
+#navResponsive .menu .item {
+	/*background-color: #50BFB0 !important;*/
+}
+
+#definition {
+	margin: 30px;
+}
+#definition > p {
+	text-align: center;
+	font-style: italic;
+	padding: 20px;
+	padding-bottom: 0px;
+	margin: 0 auto;
+
+
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif !important;
+	font-weight: normal;
+	font-size: 1.1em;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	margin: 0px;
+	text-align: center;
+	text-transform: uppercase;
+
+	/*
+	color: #424242;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin: 40px auto;
+	text-transform: lowercase;
+	line-height: 145%;
+	font-size: 14pt;
+	font-variant: small-caps;
+*/
+}
+
+#definition .from {
+	font-size: 10px;
+	font-family: "Merriweather", Georgia, 'Times New Roman', serif !important;
+	color: #000;
+	text-align: right;
+	font-weight: 100;
+	display: block;
+	padding-right: 150px;
+}
+
+.contactMe, .pageInfo {
+	text-align: center;
+	font-style: italic;
+}
+/* Blogg */
+
+.blogPostClosed {
+	margin-bottom: 20px;
+}
+
+.blogPostHeader {
+	margin-top: 20px !important;
+}
+
+.blogPostedDate {
+	/*
+	font-size: 0.8rem;
+	font-style: italic;
+	margin: -3px 0 2px 0;
+	*/
+	text-align: center;
+	display: inline !important;
+	padding-right: 15px;
+}
+
+.blogPostClosed .blogPostHeader {
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+.blogContent {
+
+}
+
+.blogPostInfo {
+	text-align: center;
+	color: grey;
+	padding-bottom: 20px;
+	font-size: 0.8em;
+}
+
+.blogPostKeywords {
+	display: inline;
+
+}
+
+.blogPostTags {
+	text-align: center;
+}
+.blogPostSearchResult {
+	text-indent: 40px;
+	text-decoration: none !important;
+}
+
+/* from_guests.html */
+
+.written-by {
+	text-align: right;
+}
+
+/* page_one.html */
+
+iframe {
+	display: inline-block;
+}
+
+.videoBox {
+	margin: 40px 0;
+}
+.videoDescription {
+	vertical-align: top;
+	display: inline-block;
+	padding: 0 10px;
+	width: 330px;
+}
+
+.videoDescription h3 {
+	margin-bottom: 5px;
+}
+
+.videoDescription h4 {
+	margin-top: 0px;
+}
+
+.videoOf {
+	font-style: italic;
+	font-size: 0.9rem;
+	margin-top: -10px !important;
+}
+
+.anchorBar {
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+	font-family: var(--heading-font);
+}
+
+.anchorBar li  {
+	display: inline;
+	padding: 5px;
+}
+
+/* page_two.html */
+
+.ui.item .header {
+	margin-top: 15px !important;
+}
+
+/* sendt.html */
+#mailSendt {
+	text-align: center;
+	font-style: italic;
+	font-size: 	130%;
+	margin-top: 50px;
+}
+
+
+/* Scroll to the top button */
+.scrollToTop {
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	display: none;
+	margin: -30px auto 30px;
+}
+
+.show {
+	display: block !important;
+}
+
+.hide {
+	display: none;
+}
+
+.comingSoon {
+	text-align: center;
+	font-style: italic;
+	font-size: 130%;
+	margin-top: 50px !important;
+}
+
+/* Change margin to right */
+@media (max-width: 1630px) {
+	#main {
+		margin: 60px auto 60px 320px;
+	}
+}
+
+/* Hide rail and padding  */
+@media (max-width: 1400px) {
+	#rail {
+		display: none;
+	}
+
+	#main {
+		margin: 60px auto;
+		padding: 3%;
+	}
+}
+
+/* Mobilephone etc */
+@media only screen and (max-width: 767px) {
+	/* Change type of menu */
+	.mobile.hidden {
+		display: none !important;
+	}
+	.mobile.only {
+		display: visible;
+	}
+
+	/* Remove movies when small screen */
+	#videoDiv iframe {
+		display: none;
+	}
+	.videoDescription > h3.ui.header {
+		display: none;
+	}
+	.videoTitle {
+		display: visible;
+	}
+
+	.videoOf {
+		margin-top: 0 !important;
+	}
+
+	#main {
+		margin: 50px auto;
+		font-size: 95%;
+	}
+
+	/* TODO: decrese all fontsizes */
+	body {
+		font-size: 80% !important; 
+	}
+
+}
+
+/* Bigger than phone */
+/* To change type of menu */
+@media only screen and (min-width: 768px) {
+	.mobile.only {
+		display: none !important;
+	}
+	.mobile.hidden {
+		display: visible;
+	}
+
+	.videoTitle {
+		display: none;
+	}
+
+	.videoDescription > h3.ui.header {
+		display: visible;
+	}
+
+
+}

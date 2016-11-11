@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>
+      Django homepage
+    </title>
+    
+    <meta charset="utf-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'semantic.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77286446-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head>
+
+  <body>
+
+    {% block header %} {% endblock %}
+
+    <!-- Skal vises ved skjermbredde > 768px -->
+    <nav id="nav" class="ui tabular left inverted teal menu mainColor mobile hidden myStickyEl">
+      <div class="ui container" id="navContainer">
+        {% include "shared/nav.html" %}
+      </div>
+    </nav>
+
+    <!-- Skal vises ved skjermbredde < 767px --> 
+    <nav id="navResponsive" class="ui top compact teal inverted menu mainColor mobile only myStickyEl">
+      {% include "shared/navResponsive.html" %}
+    </nav>
+
+    <main id="main" class="ui container segment">
+
+      <div id="contentBox">
+        {% block main %}{% endblock %}
+      </div>
+
+    </main>
+
+    <a href="#" class="scrollToTop">
+      Til toppen
+    </a>
+
+    <footer id="footer" class="mainColor">
+      {% include "shared/footer.html" %}
+    </footer>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/static/semantic.min.js"></script>
+    <script src="/static/scripts.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{% extends 'shared/base.html' %}
+
+{% block header %}
+
+<header></header>
+
+{% endblock %}
+
+{% block main %}
+
+<h1 class="ui dividing header">
+	Guest post
+</h1>
+
+<p class="contactMe">
+	Do you want to share anything <a href="/contact">Contact me.</a>
+</p>
+
+
+<div id="guestHomePage">
+
+	{% for post in guest_posts %}
+		<h2 class="ui dividing header">
+			{{ post.title }}
+		</h2>
+
+		<p class="guest-post-content">
+			{{ post.content }}
+		</p>
+
+		<h4 class="ui header" class="written-by">
+			Written by {{ post.author }}, {{ post.posted }}
+		</h4>
+	{% endfor %}
+
+</div>
+
+{% endblock %}

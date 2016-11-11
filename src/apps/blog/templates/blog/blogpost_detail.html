@@ -1,0 +1,36 @@
+{% extends 'shared/base.html' %}
+{% load markdown_deux_tags %}
+
+{% block main %}
+
+<h1 class="ui header">
+	{{ blogpost.title}}
+</h1>
+
+<div class="blogPostInfo">
+	<p class="blogPostedDate">
+		<i class="calendar icon"></i>
+		{{ blogpost.posted }}
+	</p>
+
+	<!--
+	<p class="blogPostKeywords">
+		<i class="tags icon"></i>
+		Keywords:
+			{% for keyword in blogpost.get_keywords %}
+				<a href="../search/{{ keyword }}">
+					{{ keyword.keyword }}, 
+				</a>
+			{% endfor %}
+		
+	</p>
+	-->
+</div>
+
+<div class="blogContent">
+	{{ blogpost.content|markdown }}
+</div>
+
+
+
+{% endblock %}

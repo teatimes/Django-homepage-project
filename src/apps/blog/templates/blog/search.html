@@ -1,0 +1,25 @@
+{% extends 'shared/base.html' %}
+
+{% block main %}
+
+<h1 class="ui dividing header">
+	Search results
+</h1>
+
+<p>
+	You searched after: {{ keyword.keyword }} <!-- TODO -->
+</p>
+
+<h2 class="ui header">
+	Blogginnlegg
+</h2>
+
+	<!-- Itererer gjennom hver blogginnlegg med det nøkkelordet -->
+	{% for post in keyword.posts_with_keyword %}
+		<a href="/blog/{{ post.slug }}">
+			<p class="blogPostSearchResult"> {{ post.title }} </p>
+		</a>
+	{% endfor %}
+
+
+{% endblock %}

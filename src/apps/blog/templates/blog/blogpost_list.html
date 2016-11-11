@@ -1,0 +1,91 @@
+{% extends 'shared/base.html' %}
+{% load markdown_deux_tags %}
+
+{% block header %}
+
+{% include "homepage/header.html" %}
+
+{% endblock %}
+
+{% block main %}
+
+<h1 class="ui huge center aligned dividing header">
+	Blogg
+</h1>
+
+<div id="blogHomePage">
+
+	<!--
+	<div class="blogPostTags">
+		Sorter etter tema:
+		<i class="tags icon"></i>
+
+		{% for word in keyword_list %}
+			<a href="../search/{{ word.keyword }}">
+				{{ word.keyword }}
+			</a>
+
+		{% endfor %}
+	</div>
+	-->
+
+	<!--
+	{% for post in blogpost_list %}
+		<div class="blogPostClosed">
+			<a href="/blog/{{ post.slug }}">
+				<h3 class="ui header blogPostHeader">
+					{{ post.title }}
+				</h3>
+				<p class="blogPostDate">
+					{{ post.posted }}
+				</p>
+				<p>
+					{{ post.description }}
+				</p>
+			</a>
+		</div>
+
+	{% endfor %}
+	-->
+
+	{% for blogpost in blogpost_list %}
+		<h1 class="ui header blogPostHeader">
+			{{ blogpost.title}}
+		</h1>
+
+		<div class="blogPostInfo">
+			<!--
+			<p class="blogPostedDate">
+				<i class="calendar icon"></i>
+				{{ blogpost.posted }}
+			</p>
+			-->
+
+			<!--
+
+			<p class="blogPostKeywords">
+				<i class="tags icon"></i>
+					{% for keyword in blogpost.get_keywords %}
+						<a href="../search/{{ keyword }}">
+							{{ keyword.keyword }}, 
+						</a>
+					{% endfor %}
+			</p>
+
+			-->
+
+		</div>
+
+		<div class="blogContent">
+			{{ blogpost.content|markdown }}
+		</div>
+
+	{% endfor %}
+
+	
+
+</div>
+
+
+
+{% endblock %}
